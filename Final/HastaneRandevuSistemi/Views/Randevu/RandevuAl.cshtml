@@ -1,0 +1,94 @@
+﻿@model HastaneRandevuSistemi.Models.RandevuModel
+
+@{
+    ViewData["Title"] = Localizer["randevual"];
+    Layout = "~/Views/Shared/_Layout.cshtml";
+  
+}
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/Adminnnn/js/myscripts.js"></script>
+
+<h1>@Localizer["randevual"]</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="RandevuAl" id="myForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+
+            <div class="form-group">
+                <label class="control-label">@Localizer["il"]</label>
+                <select  class="control-label" id="selectedsehir">
+                  
+                </select>
+              
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">@Localizer["ilce"]</label>
+                <select class="control-label" id="selectedilce">
+                    
+                </select>
+           
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">@Localizer["hastane"]</label>
+                <select class="control-label" id="selectedhastane">
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">@Localizer["bolum"]</label>
+                <select class="control-label" id="selectedbolum">
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">@Localizer["doktorr"]</label>
+                <select asp-for="DoktorNO" class="control-label" id="selecteddoktor">
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">@Localizer["gun"]</label>
+                <select asp-for="Gun" class="control-label" id="selectedgun">
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">@Localizer["saat"]</label>
+    <select asp-for="Saat" class="control-label" id="selectedsaat">
+       
+    </select>
+    
+</div>
+
+
+
+            <p style="color: red;">@ViewBag.msg</p>
+           
+            <div class="form-group">
+                <input type="submit" value=@Localizer["olustur"] class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

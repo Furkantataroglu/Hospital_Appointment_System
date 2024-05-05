@@ -1,0 +1,87 @@
+﻿@model HastaneRandevuSistemi.Models.KullaniciModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+     @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers 
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+}
+
+<h1>@Localizer["edit"]</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="HastaEdit" method="post" asp-route-id="@Model.KullaniciId">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="KullaniciTcNo" class="control-label">TC</label>
+                <input asp-for="KullaniciTcNo"  class="form-control" readonly/>
+                <span asp-validation-for="KullaniciTcNo" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="KullaniciAd" class="control-label">@Localizer["ad"]</label>
+                <input asp-for="KullaniciAd"  class="form-control" />
+                <span asp-validation-for="KullaniciAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciSoyad" class="control-label">@Localizer["soyad"]</label>
+                <input asp-for="KullaniciSoyad"  class="form-control" />
+                <span asp-validation-for="KullaniciSoyad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciDogumTarihi" class="control-label">@Localizer["tarih"]</label>
+                <input asp-for="KullaniciDogumTarihi" class="form-control" />
+                <span asp-validation-for="KullaniciDogumTarihi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciTelefon" class="control-label">@Localizer["tel"]</label>
+                <input asp-for="KullaniciTelefon"  class="form-control" />
+                <span asp-validation-for="KullaniciTelefon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciMail" class="control-label">Mail</label>
+                <input asp-for="KullaniciMail" class="form-control" />
+                <span asp-validation-for="KullaniciMail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciSifre" class="control-label">@Localizer["sifre"]</label>
+                <input asp-for="KullaniciSifre"  class="form-control" />
+                <span asp-validation-for="KullaniciSifre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciCinsiyet" class="control-label">@Localizer["cinsiyet"]</label>
+                <select asp-for="KullaniciCinsiyet">
+                    <option value="Erkek" class="control-label">@Localizer["erkek"]</option>
+                    <option value="Kadın" class="control-label">@Localizer["kadin"]</option>
+
+                </select>
+                <span asp-validation-for="KullaniciCinsiyet" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="KullaniciSifreTekrar" class="control-label">@Localizer["tekrar"]</label>
+                <input asp-for="KullaniciSifreTekrar"  class="form-control" />
+                <span asp-validation-for="KullaniciSifreTekrar" class="text-danger"></span>
+            </div>
+            <div>
+                @ViewBag.msg
+            </div>
+            <div class="form-group">
+                <input type="submit" value=@Localizer["kaydet"] asp-action="HastaEdit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Hasta" >@Localizer["don"]</a>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+}

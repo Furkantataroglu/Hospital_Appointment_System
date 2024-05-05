@@ -1,0 +1,163 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HastaneRandevuSistemi
+build_property.RootNamespace = HastaneRandevuSistemi
+build_property.ProjectDir = C:\Users\furka\Desktop\Final\HastaneRandevuSistemi\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\furka\Desktop\Final\HastaneRandevuSistemi
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/Admin/Bolum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cQm9sdW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/Admin/BolumDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cQm9sdW1EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/Admin/BolumEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cQm9sdW1FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/Admin/BolumEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cQm9sdW1Fa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/Admin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/Admin/Doktor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cRG9rdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/Admin/DoktorEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cRG9rdG9yRWtsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/Admin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/Admin/Hasta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSGFzdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/Admin/HastaDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSGFzdGFEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/Admin/HastaEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSGFzdGFFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/Admin/HastaEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSGFzdGFFa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Baskan/Views/CalismaSaatleri/CalismaZamaniBelirle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmFza2FuXFZpZXdzXENhbGlzbWFTYWF0bGVyaVxDYWxpc21hWmFtYW5pQmVsaXJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Baskan/Views/CalismaSaatleri/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmFza2FuXFZpZXdzXENhbGlzbWFTYWF0bGVyaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Baskan/Views/Shared/_BaskanLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmFza2FuXFZpZXdzXFNoYXJlZFxfQmFza2FuTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Baskan/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmFza2FuXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Doktor/Views/Doktor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRG9rdG9yXFZpZXdzXERva3RvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Doktor/Views/Doktor/randevulisteleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRG9rdG9yXFZpZXdzXERva3RvclxyYW5kZXZ1bGlzdGVsZW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Doktor/Views/Shared/_DoktorLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRG9rdG9yXFZpZXdzXFNoYXJlZFxfRG9rdG9yTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Areas/Doktor/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRG9rdG9yXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Views/Doktor/DoktorPaneli.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yXERva3RvclBhbmVsaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Views/Kullanici/kullaniciEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuaWNpXGt1bGxhbmljaUVrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Views/Language/ChangeCulture.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZ3VhZ2VcQ2hhbmdlQ3VsdHVyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Views/Login/GirisYap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cR2lyaXNZYXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Views/Randevu/RandevuAl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxSYW5kZXZ1QWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/furka/Desktop/Final/HastaneRandevuSistemi/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1fumpbuw97

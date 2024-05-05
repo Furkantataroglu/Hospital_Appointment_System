@@ -1,0 +1,51 @@
+﻿@model HastaneRandevuSistemi.Models.BolumModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+     @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers 
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+}
+
+<h1>@Localizer["edit"]</h1>
+
+<h4>@Localizer["tablo"]</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="BolumEdit" method="post" asp-route-id="@Model.BolumId">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BolumId" class="control-label">Id</label>
+                <input asp-for="BolumId"  class="form-control" readonly/>
+                <span asp-validation-for="BolumId" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="BolumAdi" class="control-label">@Localizer["bolum"]</label>
+                <input asp-for="BolumAdi"  class="form-control" />
+                <span asp-validation-for="BolumAdi" class="text-danger"></span>
+            </div>
+           
+            <div>
+                @ViewBag.msg
+            </div>
+            <div class="form-group">
+                <input type="submit" value=@Localizer["kaydet"] asp-action="BolumEdit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Bolum" >@Localizer["don"]</a>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+}

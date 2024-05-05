@@ -1,0 +1,46 @@
+﻿@model List<HastaneRandevuSistemi.Models.BolumModel>
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+     @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers 
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+}
+
+<h1>@Localizer["bolumler"]</h1>
+
+ <p>
+    <a asp-action="BolumEkle">@Localizer["bolumekle"]</a>
+</p>
+<div class="card-body">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+              Id
+            </th> 
+            <th>
+               @Localizer["ad"]
+            </th>   
+            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.BolumId
+            </td>
+            <td>
+                @item.BolumAdi
+            </td>       
+                    
+            <td>
+             <a asp-action="BolumEdit" asp-route-id="@item.BolumId">@Localizer["edit"]</a> |
+             <a asp-action="BolumDelete" asp-route-id="@item.BolumId">@Localizer["delete"]</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>

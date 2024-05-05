@@ -1,0 +1,118 @@
+﻿@model HastaneRandevuSistemi.Models.KullaniciModel
+
+@{
+    ViewData["Title"] = Localizer["baslik"];
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>@Localizer["baslik"]</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-primary">
+    <div id="layoutAuthentication">
+        <div id="layoutAuthentication_content">
+            <main>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5">
+                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                <div class="card-header"><h3 class="text-center font-weight-light my-4">@Localizer["baslik"]</h3></div>
+                                <div class="card-body">
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="kullaniciEkle">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="KullaniciAd" class="control-label">@Localizer["ad"]</label>
+                <input asp-for="KullaniciAd" class="form-control" />
+                <span asp-validation-for="KullaniciAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciSoyad" class="control-label">@Localizer["soyad"]</label>
+                <input asp-for="KullaniciSoyad" class="form-control" />
+                <span asp-validation-for="KullaniciSoyad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciTcNo" class="control-label">@Localizer["tc"]</label>
+                <input asp-for="KullaniciTcNo" class="form-control" />
+                <span asp-validation-for="KullaniciTcNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+
+
+                <label asp-for="KullaniciDogumTarihi" class="control-label">@Localizer["dogum"]</label>
+                <input asp-for="KullaniciDogumTarihi" id="tarih"  class="form-control" />
+                <span asp-validation-for="KullaniciDogumTarihi" class="text-danger"></span>
+
+                <script>
+                 document.getElementById('tarih').addEventListener('input', function () {
+                     var selectedDate = new Date(this.value);
+                        var currentDate = new Date();
+
+                    if (selectedDate > currentDate) {
+                    alert("Gelecek tarih seçemezsiniz.");
+                    this.value = ''; // Tarihi temizle
+                 }
+        });
+    </script>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciTelefon" class="control-label">@Localizer["tel"]</label>
+                <input asp-for="KullaniciTelefon" class="form-control" />
+                <span asp-validation-for="KullaniciTelefon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciMail" class="control-label">Mail</label>
+                <input asp-for="KullaniciMail" class="form-control" />
+                <span asp-validation-for="KullaniciMail" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label asp-for="KullaniciCinsiyet" class="control-label">@Localizer["cinsiyet"]</label>
+                <select name="KullaniciCinsiyet" asp-for="KullaniciCinsiyet" class="control-label" >
+                   
+                        <option value="Erkek" class="control-label">@Localizer["erkek"]</option>
+                        <option value="Kadın" class="control-label">@Localizer["kadin"]</option>
+                    
+                </select>
+                <span asp-validation-for="KullaniciCinsiyet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciSifre" class="control-label">@Localizer["sifre"]</label>
+                <input asp-for="KullaniciSifre" class="form-control" />
+                <span asp-validation-for="KullaniciSifre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciSifreTekrar" class="control-label">@Localizer["sifretekrar"]</label>
+                <input asp-for="KullaniciSifreTekrar" class="form-control" />
+                <span asp-validation-for="KullaniciSifreTekrar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @ViewBag.msg
+                <input type="submit" value="@Localizer["baslik"]" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

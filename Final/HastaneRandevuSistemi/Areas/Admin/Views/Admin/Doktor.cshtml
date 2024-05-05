@@ -1,0 +1,94 @@
+﻿@model List<HastaneRandevuSistemi.Models.DoktorModel>
+
+@{
+    ViewData["Title"] = "Doktor";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+     @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers 
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+}
+
+
+<h1>@Localizer["doctor"]</h1>
+
+ <p>
+    <a asp-action="DoktorEkle">@Localizer["add"]</a>
+</p>
+
+
+
+<div class="card-body">
+<table class="table" id="tblCategory">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                @Localizer["state"]
+            </th>
+            <th>
+                @Localizer["bolum"]
+            </th>
+             <th>
+                @Localizer["hastane"]
+            </th>
+            <th>
+                @Localizer["name"]
+            </th>
+            <th>
+                @Localizer["surname"]
+            </th>
+            <th>
+                TC
+            </th>
+            <th>
+                @Localizer["tel"]
+            </th>
+            <th>
+                Mail
+            </th>                  
+            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td class="categoryId">
+                @item.DoktorId
+            </td>
+
+            <td>
+                @item.state
+            </td>
+            <td>
+                 @item.bolum.BolumAdi
+            </td>
+            <td>
+                @item.hastaneler.HastaneAdi
+            </td>
+            <td>
+                @item.DoktorAdi
+            </td>
+            <td>
+                @item.DoktorSoyad
+            </td>
+            <td>
+                @item.DoktorTcNo
+            </td>
+            <td>
+                @item.DoktorTelefon
+            </td>
+            <td>
+                @item.DoktorMail
+            </td>
+                    
+            <td>
+             <a asp-action="Edit" asp-route-id="@item.DoktorId">@Localizer["edit"]</a> |
+                <a asp-action="Delete" asp-route-id="@item.DoktorId">@Localizer["sil"]</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div> 

@@ -1,0 +1,93 @@
+﻿@model HastaneRandevuSistemi.Models.DoktorModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+     @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers 
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+}
+
+<h1>@Localizer["edit"]</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post" asp-route-id="@Model.DoktorId">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DoktorTcNo" class="control-label">TC</label>
+                <input asp-for="DoktorTcNo"  class="form-control" readonly/>
+                <span asp-validation-for="DoktorTcNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BolumId" class="control-label">@Localizer["bolum"]</label>
+                <select  asp-for="BolumId" class="control-label" >
+                    @foreach (var bolum in ViewBag.bolum)
+                    {
+                        <option value="@bolum.BolumId" class="control-label">@bolum.BolumAdi</option>
+                    }
+                </select>
+                <span asp-validation-for="BolumId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="hastanelerId" class="control-label">@Localizer["hastane"]</label>
+                <select asp-for="hastanelerId" class="control-label">
+                    @foreach (var hastane in ViewBag.hastaneler)
+                    {
+                        <option value="@hastane.HastaneId" class="control-label">@hastane.HastaneAdi</option>
+                    }
+                </select>
+                <span asp-validation-for="hastanelerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoktorAdi" class="control-label">@Localizer["ad"]</label>
+                <input asp-for="DoktorAdi"  class="form-control" />
+                <span asp-validation-for="DoktorAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoktorSoyad" class="control-label">@Localizer["soyad"]</label>
+                <input asp-for="DoktorSoyad"  class="form-control" />
+                <span asp-validation-for="DoktorSoyad" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="DoktorTelefon" class="control-label">@Localizer["tel"]</label>
+                <input asp-for="DoktorTelefon"  class="form-control" />
+                <span asp-validation-for="DoktorTelefon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoktorMail" class="control-label">Mail</label>
+                <input asp-for="DoktorMail" class="form-control" />
+                <span asp-validation-for="DoktorMail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoktorSifre" class="control-label">@Localizer["sifre"]</label>
+                <input asp-for="DoktorSifre"  class="form-control" />
+                <span asp-validation-for="DoktorSifre" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="DoktorSifreTekrar" class="control-label">@Localizer["tekrar"]</label>
+                <input asp-for="DoktorSifreTekrar"  class="form-control" />
+                <span asp-validation-for="DoktorSifreTekrar" class="text-danger"></span>
+            </div>
+            <div>
+                @ViewBag.msg
+            </div>
+            <div class="form-group">
+                <input type="submit" value=@Localizer["kaydet"] asp-action="Edit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Doktor" >@Localizer["don"]</a>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+}

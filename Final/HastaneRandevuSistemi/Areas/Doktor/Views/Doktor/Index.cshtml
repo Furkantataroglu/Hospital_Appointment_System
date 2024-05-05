@@ -1,0 +1,26 @@
+﻿<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+   <style>
+        body {
+            margin: 0; /* Sayfanın kenar boşluğunu sıfırla */
+            overflow: hidden; /* Ekran dışına taşan içeriği gizle */
+        }
+
+        #viewArea {
+            width: 100vw; /* Sayfanın genişliği kadar */
+            height: 100vh; /* Sayfanın yüksekliği kadar */
+            overflow: hidden; /* Taşan içeriği gizle */
+        }
+
+        #viewArea img {
+            width: 100%; /* Resmi container'ın genişliği kadar genişlet */
+            height: 100%; /* Resmi container'ın yüksekliği kadar genişlet */
+            object-fit: cover; /* Oranları koruyarak, container'ı tamamen kaplayacak şekilde resmi sığdır */
+        }
+    </style>
+<div id="viewArea" class="img-fluid">
+    <img class="img-fluid" src="~/resimler/doktorpanel.jpg" alt="Resim Açıklaması">
+</div>

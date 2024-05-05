@@ -1,0 +1,53 @@
+﻿@using HastaneRandevuSistemi.Models
+@model List<RandevuModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<div class="card-body">
+    <table class="table" id="tblCategory">
+        <tr>
+            <th>
+                Tc
+            </th>
+            <th>
+                @Localizer["ad"]
+            </th>
+            <th>
+                @Localizer["soyad"]
+            </th>
+            <th>
+                @Localizer["doktorad"]
+            </th>
+            <th>
+                @Localizer["doktorsoyad"]
+            </th>
+            <th>
+                @Localizer["gun"]
+            </th>
+            <th>
+                @Localizer["saat"]
+            </th>
+            <th>
+                
+            </th>
+
+        </tr>
+        <tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.HastaTcNo</td>
+                    <td>@item.HastaAdi</td>
+                    <td>@item.HastaSoyadi</td>
+                    <td>@item.DoktorAdi</td>
+                    <td>@item.DoktorSoyadi</td>
+                    <td>@item.Gun</td>
+                    <td>@item.Saat</td>
+                <td><a asp-action="randevusilme" asp-route-id="@item.Id">@Localizer["sil"]</a></td>
+                </tr>
+            }
+        </tr>
+    </table>
+</div>
+

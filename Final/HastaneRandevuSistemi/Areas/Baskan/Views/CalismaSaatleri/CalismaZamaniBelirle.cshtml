@@ -1,0 +1,70 @@
+﻿@model HastaneRandevuSistemi.Models.DoktorCalismaSaatlariModeli
+
+@{
+    ViewData["Title"] = "CalismaZamaniBelirle";
+}
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<h1>@Localizer["belirle"]</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CalismaZamaniBelirle" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DoktorId" class="control-label">Id</label>
+                <select name="selectedDoktorId" asp-for="DoktorId" class="control-label">
+                    @foreach (var doktor in ViewBag.Doktorlar)
+                    {
+                        <option value="@doktor.DoktorId" class="control-label">@doktor.DoktorAdi @doktor.DoktorSoyad</option>
+                    }
+                </select>
+                <span asp-validation-for="DoktorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DCSMBaslangicSaati" class="control-label">@Localizer["baslangic"]</label>
+                <select id="BaslangicSaati" name="DCSMBaslangicSaati">
+                    @for (int i = 9; i <= 17; i++)
+                    {
+                        <option value="@i:00">@i:00</option>
+                    }
+                </select>
+                <span asp-validation-for="DCSMBaslangicSaati" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DCSMBitisSaati" class="control-label">@Localizer["bitis"]</label>
+                <select id="BitisSaati" name="DCSMBitisSaati">
+                    
+                    @for (int i = 9; i <= 17; i++)
+                    {
+                        
+                        <option value="@i:00">@i:00</option>
+                    }
+                </select>
+                <span asp-validation-for="DCSMBitisSaati" class="text-danger"></span>
+                <p>@ViewBag.msg</p>
+            </div>
+            <div class="form-group">
+                <div id="tarihListesi">
+                    <label for="Tarih">@Localizer["randevu"]</label>
+                    <div class="tarihSecmeAlani">
+                        <label asp-for="DCSMcalismaTarihi">
+                            @Localizer["sec"]
+                        </label>     
+                        <input type="date" min="@DateTime.Now.ToString("yyyy-MM-dd")" name="DCSMcalismaTarihi" class="tarihInput" required />
+                    </div>
+                </div>
+               
+            </div>
+            <span asp-validation-for="DCSMcalismaTarihi" class="text-danger"></span>
+            <div class="form-group">
+                <input type="submit" value=@Localizer["olustur"] class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
